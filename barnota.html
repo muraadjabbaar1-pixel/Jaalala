@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="om">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Muraad Love</title>
+
+    <link rel="stylesheet" href="style.css">
+  <style>
+    /* =========================
+   MURAAD LOVE HEADER
+========================= */
+
+.love-header {
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    padding: 55px 20px 0;
+
+    background:
+        linear-gradient(
+            135deg,
+            #2196f3,
+            #7b1fa2,
+            #e91e63
+        );
+
+    color: white;
+
+    box-shadow:
+        0 10px 30px rgba(0, 0, 0, 0.25);
+}
+
+
+/* LOGO */
+
+.love-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 18px;
+}
+
+.love-logo h1 {
+    margin: 0;
+
+    font-size: 48px;
+    font-weight: 900;
+    letter-spacing: 2px;
+
+    text-shadow:
+        3px 4px 8px rgba(0,0,0,0.35);
+}
+
+
+/* HEART */
+
+.heart {
+    font-size: 65px;
+
+    display: inline-block;
+
+    animation:
+        loveBeat 1.5s infinite;
+
+    filter:
+        drop-shadow(
+            0 6px 8px rgba(0,0,0,0.3)
+        );
+}
+
+@keyframes loveBeat {
+
+    0%, 100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.18);
+    }
+
+}
+
+
+/* SLOGAN */
+
+.love-slogan {
+
+    margin: 35px -20px 0;
+
+    padding: 18px 15px;
+
+    background:
+        rgba(120, 0, 0, 0.88);
+
+    color: white;
+
+    font-size: 21px;
+
+    font-weight: 500;
+
+    letter-spacing: 0.5px;
+
+    box-shadow:
+        0 -5px 15px rgba(0,0,0,0.15);
+}
+
+.love-slogan strong {
+    color: #ffe082;
+}
+
+
+/* DECORATION */
+
+.love-header::before,
+.love-header::after {
+
+    content: "❤️";
+
+    position: absolute;
+
+    font-size: 35px;
+
+    opacity: 0.25;
+
+    animation: floatingHeart 4s infinite ease-in-out;
+}
+
+.love-header::before {
+    left: 8%;
+    top: 25%;
+}
+
+.love-header::after {
+    right: 8%;
+    top: 15%;
+    animation-delay: 1.5s;
+}
+
+
+@keyframes floatingHeart {
+
+    0%, 100% {
+        transform: translateY(0) rotate(-10deg);
+    }
+
+    50% {
+        transform: translateY(-18px) rotate(10deg);
+    }
+
+}
+
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+
+    .love-header {
+        padding: 40px 12px 0;
+    }
+
+    .love-logo {
+        gap: 10px;
+    }
+
+    .heart {
+        font-size: 45px;
+    }
+
+    .love-logo h1 {
+        font-size: 30px;
+        letter-spacing: 1px;
+    }
+
+    .love-slogan {
+        margin-top: 28px;
+        font-size: 16px;
+        padding: 15px 10px;
+    }
+
+}
+  </style>
+</head>
+
+<body>
+
+    <header class="love-header">
+   <button id="darkModeBtn" onclick="toggleDarkMode()">
+    🌙
+   </button>
+    <div class="love-logo">
+        <span class="heart">❤️</span>
+        <h1>MURAAD LOVE</h1>
+    </div>
+  
+    <p class="love-slogan">
+        Dubbisa gaarii irraa hubadhuu,
+        <strong>jabaadhu.</strong>
+    </p>
+
+    </header>
+
+    <main>
+
+        <h2 style="color: #d81b60;
+    font-size: 30px;
+    margin-bottom: 35px;">📚 Barnoota Jaalalaa</h2>
+       <div class="search-box">
+   <div class="mmss-card">
+
+    <div class="lessn-icon">🎬</div>
+
+    <h2>Video Barnoota Jaalalaa</h2>
+
+    <span>(Barnoota Viidiyoo)</span>
+
+    <p>
+        Waa'ee jaalalaa viidiyoodhaan baradhu.
+        Jechoota jaalalaa, mallattoolee jaalalaa fi
+        hariiroo irratti barnoota argatta.
+    </p>
+
+    <a href="video.html" class="vide-btn">
+        🎬 Video Laali
+    </a>
+
+   </div>
+    <input
+        type="text"
+        id="lessonSearch"
+        placeholder="🔍 Barbaadi... fakkeenya: Jaalala"
+        onkeyup="searchLessons()"
+    >
+
+       </div>
+        <div class="cards">
+
+            <div class="card">
+                <h3>❤️ Love Signs (Mallattoo Jaalalaa)</h3>
+                <p>
+                    Dubartiin tokko yoo si jaalatte
+                    akkamitti beekta?
+                </p>
+                <button> <a href="love.html" style="color:white;">Learn(Baradhu) </a></button>
+            </div>
+
+            <div class="card">
+                <h3>💔 Red Flags (Mallattoo Balaa)</h3>
+                <p>
+                    Namni tokko yoo si hin jaalanne
+                    akkamitti adda baasta?
+                </p>
+                <button><a href="red.html" style="color:white;"> Learn (Baradhu)</a></button>
+            </div>
+
+            <div class="card">
+                <h3>😎 Self Improvement (Of Guddifachuu)</h3>
+                <p>
+                    Akka nama kabajamaa fi jaalatamaa
+                    taatu maal gochuu qabda?
+                </p>
+                <button><a href="self.html" style="color:white;">Learn (Baradhu)</a></button>
+            </div>
+
+            <div class="card">
+                <h3>💬 Communication (Haasawa)</h3>
+                <p>
+                    Nama jaallattu waliin akkamitti
+                    haasa'uu qabda?
+                </p>
+                <button><a href="commu.html"style="color:white;">Learn (Baradhu)</a></button>
+            </div>
+
+            <div class="card">
+                <h3>🧠 Psychology (Saayikoloojii)</h3>
+                <p>
+                    Miirri jaalalaa sammuu namaa irratti
+                    akkamitti hojjetaa?
+                </p>
+                <button><a href="psy.html" style="color:white;">Learn (Baradhu)</a></button>
+            </div>
+
+            <div class="card">
+                <h3>🌙 Islamic Love (Jaalala Islaamaa)</h3>
+                <p>
+                    Jaalala keessatti kabajaa fi daangaa
+                    Islaamaa beekuu.
+                </p>
+                <button><a href="islamic.html" style="color:white;">Learn(Baradhu)</a></button>
+            </div>
+
+            <div class="card">
+                <h3>💔 Breakup (Addaan Bahuu)</h3>
+                <p>
+                    Yeroo jaalalli addaan citu
+                    maal gochuu qabda?
+                </p>
+                <button><a href="break.html" style="color:white;">Learn (Baradhu)</a></button>
+            </div>
+
+            <div class="card">
+                <h3>❤️ Healing (Miira Irraa Fayyuu)</h3>
+                <p>
+                    Gadda jaalalaa irraa akkamitti
+                    fayyuu dandeessa?
+                </p>
+                <button><a href="healing.html" style="color:white;">Learn (Baradhu)</a></button>
+            </div>
+
+            <div class="card">
+                <h3>🧪 Love Quiz (Qormaata Jaalalaa)</h3>
+                <p>
+                    Beekumsa kee waa'ee jaalalaa
+                    qoradhu.
+                </p>
+                <button><a href="quiz.html" style="color:white;">Love Quiz (Jalqabi)</a></button>
+            </div>
+
+        </div>
+   <div class="lesson-card premium-card-link">
+
+    <div class="lesson-icon">💎</div>
+
+    <h2>Muraad Love Premium</h2>
+
+    <span>(Barnoota Addaa)</span>
+
+    <p>
+        Barnoota addaa, video Premium fi
+        gorsa jaalalaa gadi fagoo argachuuf Premium bani.
+    </p>
+
+    <a href="premium.html" class="premium-btn">
+        💎 Premium Bani
+    </a>
+
+   </div>
+    </main>
+
+    <footer class="footer">
+    <div class="footer-content">
+
+        <h2>❤️ MURAAD LOVE</h2>
+
+        <p>
+            Jaalala hubadhu ❤️<br>
+            Of beeki, nama biraa kabaji, hariiroo kee cimsadhu.
+        </p>
+
+        <div class="footer-links">
+            <a href="index.html">Home (Mana)</a>
+            <a href="about.html">About (Waa'ee)</a>
+            <a href="contact.html">Contact (Nu Qunnami)</a>
+        </div>
+
+        <hr>
+
+        <p class="copyright">
+            © 2026 MURAAD LOVE. All Rights Reserved.
+        </p>
+
+    </div>
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>

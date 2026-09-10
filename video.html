@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="om">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Video (Viidiyoo) - Muraad Love</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<nav class="navbar">
+
+    <div class="logo">
+        ❤️ MURAAD LOVE
+    </div>
+
+    <div class="nav-links">
+
+        <a href="index.html">
+            Home (Mana)
+        </a>
+
+        <a href="barnota.html">
+            Barnoota
+        </a>
+
+    </div>
+
+</nav>
+
+
+<section class="video-lessons">
+
+    <h1>🎬 Video Barnoota Jaalalaa</h1>
+
+
+    <!-- VIDEO 1 -->
+
+    <div class="video-card">
+
+        <h2>1. Jechoota Jaalalaa Mi'aawaa</h2>
+
+        <p>
+            Jechoota jaalalaa mi'aawaa fi qalbii namaa tuqan baradhu
+        </p>
+       
+        <video controls poster="love jaalala.png">
+            <source src="Jechoota_jaalalaa_mi_awaa_ (1).mp4"
+                    type="video/mp4">
+        </video>
+
+    </div>
+
+
+    <!-- VIDEO 2 -->
+
+    <div class="video-card">
+
+        <h2>2. Jechoota Jaalalaa Mi'ooftuu</h2>
+
+        <p>
+            Jechoota jaalalaa mi'ooftuu nama jaallattuuf ittiin dubbattu baradhu.
+        </p>
+
+        <video controls poster="jechoota (1).jpg">
+            <source src="jechoota_jaalalaa_mi_ooftuu_.mp4"
+                    type="video/mp4">
+        </video>
+
+    </div>
+
+
+    <!-- VIDEO 3 -->
+
+    <div class="video-card">
+
+        <h2>
+            3. Nama Osoo Jaallannu Nu Dhiisee Deeme
+            Akkamitti Daganna?
+        </h2>
+
+        <p>
+            Nama jaallannu yoo nu dhiisee deeme,
+            akkamitti miira keenya Tasgabbeessinee gara fuulduraatti tarkaanfanna?
+        </p>
+
+        <video controls poster="Nama osoo (1).jpg">
+            <source src="nama_osoo_jaallannuu_nu_dhiise_deeme_akkamitti_daganna_ (1).mp4"
+                    type="video/mp4">
+        </video>
+
+    </div>
+
+
+    <!-- VIDEO 4 -->
+
+    <div class="video-card">
+
+        <h2>
+            4. dubartii Si jaalatte beekuu barbaadda?
+          
+        </h2>
+
+        <p>           Amalaa_Dubartii_jalaalan_qabamtee_haa_ilaaluu!
+          
+        </p>
+
+        <video controls poster="dubartii.jpg">
+            <source src="DUBARTII_SI_JAALATTE_BEEKKU_BARBADAA_ (1).mp4"
+                    type="video/mp4">
+        </video>
+
+    </div>
+
+
+    <!-- VIDEO 5 -->
+
+    <div class="video-card">
+
+        <h2>
+            5. Shamarran Jaalalaan Maraachuuf
+            Kana Beekuu Qabda
+        </h2>
+
+        <p>
+            Waa'ee jaalalaa fi miira shamarranii hubachuuf wantoota barbaachisoo ta'an baradhu
+      
+        </p>
+
+        <video controls poster="dhiiraa (1).jpg">
+            <source src="Shamarran_Jaalalaan_Maraachuf_kana_beeku_qabda!__ (1).mp4"
+                    type="video/mp4">
+        </video>
+
+    </div>
+
+
+    <!-- VIDEO 6 -->
+
+    <div class="video-card">
+
+        <h2>
+            6. Mallattoo Dubartii Jaalala Siif Qabduu
+        </h2>
+
+        <p>
+            mallattoolee kana irratti yoo Argite, Namni Sun miira jaalalaa siif qabdi
+        </p>
+
+        <video controls poster="bareedduu (1).jpg">
+            <source src="Mallattoolee_Dubartii_Jaalala_Sif_Qabdu! (1).mp4"
+                    type="video/mp4">
+        </video>
+
+    </div>
+
+
+    <div class="lesson-back">
+
+        <a href="barnota.html">
+            ← Barnootaatti Deebi'i
+        </a>
+
+    </div>
+
+</section>
+<footer class="footer">
+
+        <div class="footer-content">
+
+            <h2>
+                ❤️ MURAAD LOVE
+            </h2>
+
+            <p>
+                Jaalala hubadhu ❤️
+                <br>
+                Of beeki, nama biraa kabaji,
+                hariiroo kee cimsadhu.
+            </p>
+
+            <div class="footer-links">
+
+                <a href="index.html">
+                    Home (Mana)
+                </a>
+
+                <a href="about.html">
+                    About (Waa'ee)
+                </a>
+
+                <a href="contact.html">
+                    Contact (Nu Qunnami)
+                </a>
+
+            </div>
+
+            <hr>
+
+            <p class="copyright">
+                © 2026 MURAAD LOVE.
+                All Rights Reserved.
+            </p>
+
+        </div>
+
+</footer>
+  
+<script>
+const videos = document.querySelectorAll("video");
+
+videos.forEach(function(video) {
+
+    video.addEventListener("play", function() {
+
+        videos.forEach(function(otherVideo) {
+
+            if (otherVideo !== video) {
+                otherVideo.pause();
+            }
+
+        });
+
+    });
+
+});
+</script>
+</body>
+</html>
